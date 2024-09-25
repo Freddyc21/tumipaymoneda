@@ -18,7 +18,7 @@
           Conversión de Moneda
           <i class="dropdown icon"></i>
           <div class="menu">
-            <a href="/Clientes/listado" class="item">Realizar Conversión</a>
+            <a href="/conversion" class="item">Realizar Conversión</a>
           </div>
         </div>
         <div class="right menu">
