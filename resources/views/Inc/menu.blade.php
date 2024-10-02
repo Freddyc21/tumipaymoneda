@@ -24,19 +24,12 @@
         <div class="right menu">
           <a href="{{ route('login') }}" class="item">Ingresar</a>
           <form method="POST" name="logoutform" action="{{ route('logout') }}"> @csrf <a onclick="logout();" class="item">Salir</a></form>
-          <form method="POST" name="meform" action="{{ route('me') }}"> @csrf <a onclick="me();" class="item">me</a></form>
         </div>
       </div>
 </div>
+
 @yield('formulario')
 
-<script>
-  function logout() {
-    document.logoutform.submit();
-  }
-  function me() {
-    document.meform.submit();
-  }
-</script>
+
 </body>
 </html>

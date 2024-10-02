@@ -16,7 +16,11 @@ async function ResultadoDelLogin() {
     .then(html => {
         document.body.innerHTML = html;
     })
-    .catch(error => console.error('Error:', error));
+    .catch(error => 
+    console.error('Error:', error));
+    // setTimeout(6000);
+    // location.href = "http://127.0.0.1:8000/api/auth/logueo";
+    
 
 }
 
@@ -32,5 +36,9 @@ ResultadoDelLogin();
             document.getElementById('Moneda_Destino_Texto').value = texto;
  }
 
+  function logout() {
+    document.logoutform.submit();
+    localStorage.clear();
+  }
     </script>
 
